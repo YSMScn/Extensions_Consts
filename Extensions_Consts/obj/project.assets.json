@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\Extensions_Consts.csproj",
-      "projectName": "Extensions_Consts",
-      "projectPath": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\Extensions_Consts.csproj",
+      "projectUniqueName": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\Extensions.csproj",
+      "projectName": "Extensions",
+      "projectPath": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\Extensions.csproj",
       "packagesPath": "C:\\Users\\Frank Li\\.nuget\\packages\\",
       "outputPath": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\obj\\",
       "projectStyle": "PackageReference",
