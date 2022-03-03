@@ -9,7 +9,7 @@ namespace Extensions
 {
     public static class IEnumerableExtension
     {
-        public static IEnumerable<object> Randomize(this IEnumerable<object> collection)
+        public static IEnumerable<T> Randomize<T>(this IEnumerable<T> collection)
         {
             var random = new Random(); 
             return collection.OrderBy(x=>random.Next()) ;
