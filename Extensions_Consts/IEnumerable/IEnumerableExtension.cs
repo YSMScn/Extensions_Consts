@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
 
-namespace Extensions
+namespace Extensions.IEnumerable
 {
     public static class IEnumerableExtension
     {
