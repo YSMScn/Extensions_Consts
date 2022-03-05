@@ -14,9 +14,9 @@ namespace Extensions_Test.DateTimes
         [Fact]
         public void ToUnixTimeStamp_UnixEpoch_Test()
         {
-            //Arrange
             try
             {
+                //Arrange
                 var time = DateTime.UnixEpoch;
                 //Act
                 var timeStamp = time.ToUnixTimeStamp();
@@ -35,11 +35,14 @@ namespace Extensions_Test.DateTimes
         {
             try
             {
+                //Arrange
                 var time = DateTime.UnixEpoch - TimeSpan.FromMinutes(60);
+                //Act
                 var timeStamp = time.ToUnixTimeStamp();
             }
             catch (Exception ex)
             {
+                //Assert
                 ex.ShouldBeOfType<ArgumentOutOfRangeException>();
             }
         }
@@ -49,8 +52,11 @@ namespace Extensions_Test.DateTimes
         {
             try
             {
+                //Arrange
                 var time = new DateTime(2000,1,1,0,0,0);
+                //Act
                 var timeStamp = time.ToUnixTimeStamp();
+                //Assert
                 timeStamp.ShouldBe((double)946684800);
             }
             catch (Exception ex)
