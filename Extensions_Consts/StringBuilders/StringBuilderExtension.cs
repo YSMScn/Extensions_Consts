@@ -44,6 +44,7 @@ namespace Extensions.StringBuilders
         {
             return TrimEnd(sb, target.ToString());
         }
+
         private static void TrimEndWhiteSpace(StringBuilder sb)
         {
             var index = sb.Length - 1;

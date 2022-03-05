@@ -11,7 +11,11 @@ namespace Extensions.DateTimes
     {
         public static double ToUnixTimeStamp(this DateTime originalDateTime)
         {
-            return (originalDateTime - DateTimeConst.UnixEpoch).TotalSeconds;
+            if (originalDateTime < DateTime.UnixEpoch)
+            {
+                throw new ArgumentOutOfRangeException(nameof(originalDateTime),"The DateTime to convert is earlier than UnixEpoch");
+            }
+            return (originalDateTime - DateTime.UnixEpoch).TotalSeconds;
         }
     }
 }
