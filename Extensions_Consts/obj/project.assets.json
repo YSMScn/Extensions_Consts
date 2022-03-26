@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Consts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Consts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Consts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Consts/1.0.0": {
+      "type": "project",
+      "path": "../Consts/Consts.csproj",
+      "msbuildProject": "../Consts/Consts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Consts >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Frank Li\\.nuget\\packages\\": {}
@@ -13,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\Extensions_Consts.csproj",
-      "projectName": "Extensions_Consts",
-      "projectPath": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\Extensions_Consts.csproj",
+      "projectUniqueName": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\Extensions.csproj",
+      "projectName": "Extensions",
+      "projectPath": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\Extensions.csproj",
       "packagesPath": "C:\\Users\\Frank Li\\.nuget\\packages\\",
       "outputPath": "D:\\CodeRepos\\Extensions_Consts\\Extensions_Consts\\obj\\",
       "projectStyle": "PackageReference",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\CodeRepos\\Extensions_Consts\\Consts\\Consts.csproj": {
+              "projectPath": "D:\\CodeRepos\\Extensions_Consts\\Consts\\Consts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
